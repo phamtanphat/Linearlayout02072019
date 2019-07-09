@@ -11,6 +11,7 @@
     <!--wrap_content => hiển thị kích thước vừa đủ cho view-->
     <!--match_parent => hiển thị kích thước mà người cha cho phép-->
     <TextView
+
         android:textSize="50sp"
         android:text="View 1"
         android:layout_width="match_parent"
