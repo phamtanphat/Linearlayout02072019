@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!--sp => kích thước text-->
-    <!--dp => kích thước của view-->
-    <!--wrap_content => hiển thị kích thước vừa đủ cho view-->
-    <!--match_parent => hiển thị kích thước mà người cha cho phép-->
+    <!--//margin => dãn cách ở ngoài view-->
+    <!--padding => dãn cách ở trong view, không sử dụng giá trị cứng cho kích thước khi sử dụng padding-->
     <TextView
-
+        android:layout_marginLeft="50dp"
+        android:paddingLeft="100dp"
         android:textSize="50sp"
         android:text="View 1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
