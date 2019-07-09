@@ -6,8 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <!--ctrl + spacebar : tổ hợp phím gợi ý code    -->
-    <!--<Text/> =>cuối thẻ sử dụng /, đủ 1 cặp đóng mở thẻ , không chứa thẻ con-->
-    <!--<Text></Text> => cuối thẻ sử dụng ship + > , sử dụng chứa thẻ con-->
+    <!--sp => kích thước text-->
+    <!--dp => kích thước của view-->
+    <!--wrap_content => hiển thị kích thước vừa đủ cho view-->
+    <!--match_parent => hiển thị kích thước mà người cha cho phép-->
+    <TextView
+        android:textSize="50sp"
+        android:text="View 1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
