@@ -5,20 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:gravity="right">
+    android:orientation="vertical"
+    android:weightSum="10">
 
-    <!--gravity:-->
-
-    <!--1 : Kích thước mà view có-->
-
-    <!--2 : chỉ nhảy đến vị trí ở trong kích thước của view-->
-
-    <!--3 : Khi goi gravity nó sẽ set vị trí cho đứa con bên trong-->
     <TextView
-
+        android:gravity="center"
+        android:layout_weight="1"
         android:textSize="40sp"
         android:text="View 1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_weight="4"
+        android:textSize="40sp"
+        android:text="View 2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_weight="3"
+        android:textSize="40sp"
+        android:text="View 3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:gravity="center"
+        android:layout_weight="2"
+        android:textSize="40sp"
+        android:text="View4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
 
 </LinearLayout>
