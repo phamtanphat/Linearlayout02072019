@@ -8,8 +8,11 @@
     android:gravity="right">
 
     <!--gravity:-->
+
     <!--1 : Kích thước mà view có-->
+
     <!--2 : chỉ nhảy đến vị trí ở trong kích thước của view-->
+
     <!--3 : Khi goi gravity nó sẽ set vị trí cho đứa con bên trong-->
     <TextView
 
