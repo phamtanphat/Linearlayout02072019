@@ -5,46 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:weightSum="4">
+    android:weightSum="4"
+    tools:context=".MainActivity">
 
     <!--Group 1 : 1-->
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
         <TextView
-            android:gravity="center"
-            android:textSize="50sp"
-            android:background="#f20"
-            android:textColor="#FFFFFF"
-            android:text="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:background="#f20"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
     </LinearLayout>
 
     <!--Group 2 : 2 3 4 5 -->
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_weight="3"
-        android:weightSum="4"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        android:weightSum="4">
 
         <!--Group 3 : 2-->
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFEB3B"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#090808"
+                android:textSize="50sp" />
         </LinearLayout>
 
         <!--Group 4 : 3 4 5-->
         <LinearLayout
-            android:layout_weight="3"
+            android:orientation="vertical"
             android:layout_width="0dp"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#228DB6"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#090808"
+                    android:textSize="50sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#4FB37A"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="#090808"
+                    android:textSize="50sp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#FF5722"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#090808"
+                    android:textSize="50sp" />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
